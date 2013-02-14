@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
 
     while(1) {
         stack_reset();
-        printf("> ");
+        putchar('>');
         fgets(buf, 256, stdin);
 
         for(char* token = strtok(buf, " "); token != NULL; token = strtok(NULL, " ")) {
